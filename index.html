@@ -13,7 +13,8 @@
         <h1>Raten Berechner</h1>
         <form>
             <label for="price">Auto Preis</label>
-            <input type="number" id="price" placeholder="Preis">
+            <input type="number" id="price" placeholder="Preis" required>
+            <div id="priceError" class="error-message"></div>
 
             <label for="carType">Auto Typ</label>
             <select id="carType">
@@ -21,13 +22,13 @@
                 <option value="hybrid">Hybrid</option>
             </select>
 
-            <button type="button" onclick="calculate()">Berechnen</button>
+            <button type="button" onclick="calculate()">Calculate</button>
         </form>
 
         <div id="result"></div>
     </div>
 
 </body>
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </html>
