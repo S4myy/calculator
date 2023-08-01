@@ -1,23 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Price Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>Berechner</h1>
-    <label for="price">Auto Preis</label>
-    <input type="number" id="price">
-    <br><br>
-    <label for="carType">Auto Typ</label>
-    <select id="carType">
-        <option value="electric">Elektrisch</option>
-        <option value="hybrid">Hybrid</option>
-    </select>
-    <br><br>
-    <button onclick="calculate()">Berechnen</button>
-    <p id="result"></p>
+    <div class="container">
+        <h1>Raten Berechner</h1>
+        <form>
+            <label for="price">Auto Preis</label>
+            <input type="number" id="price" placeholder="Preis" required>
+            <div id="priceError" class="error-message"></div>
+
+            <label for="carType">Auto Typ</label>
+            <select id="carType">
+                <option value="electric">Elektrisch</option>
+                <option value="hybrid">Hybrid</option>
+            </select>
+
+            <button type="button" onclick="calculate()">Calculate</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
