@@ -32,3 +32,4 @@ function calculate() {
     let result = calc(price, divider);
     document.getElementById("result").innerText = `Monatliche Rate: ${result.toFixed(2)}`;
 }
+ 
